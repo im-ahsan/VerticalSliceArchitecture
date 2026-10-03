@@ -82,14 +82,14 @@ public static class CompleteAppointment
                     $"Appointment with ID {request.AppointmentId} not found");
             }
 
-            // Let domain method handle business rule validation
+            // Let domain method handle business rule validation: state conflicts map to 409, argument errors to 400
             try
             {
                 appointment.Complete(request.Notes);
             }
             catch (InvalidOperationException ex)
             {
-                return Error.Validation("Appointment.CannotComplete", ex.Message);
+                return Error.Conflict("Appointment.CannotComplete", ex.Message);
             }
             catch (ArgumentException ex)
             {
