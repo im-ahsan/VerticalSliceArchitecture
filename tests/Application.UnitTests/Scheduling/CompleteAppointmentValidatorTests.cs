@@ -31,6 +31,18 @@ public class CompleteAppointmentValidatorTests
     }
 
     [Fact]
+    public void AC_4_3_FailsWhenNotesExceed1024Characters()
+    {
+        // Arrange
+        var command = new CompleteAppointment.Command(Guid.NewGuid(), new string('A', 1025));
+
+        // Act & Assert
+        var result = _validator.TestValidate(command);
+        result.ShouldHaveValidationErrorFor(x => x.Notes)
+            .WithErrorMessage("Notes cannot exceed 1024 characters");
+    }
+
+    [Fact]
     public void Should_Not_Have_Error_When_Valid()
     {
         // Arrange

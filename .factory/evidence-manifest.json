@@ -1,0 +1,195 @@
+{
+  "header": {
+    "kind": "evidence-manifest",
+    "schemaVersion": 1,
+    "runId": "20261003-cancelling-a-completed-appoint-b3d3",
+    "producedBy": {
+      "stage": "deliver"
+    },
+    "inputsHash": "43ec7c66bce5ff16a27960a6619d11585b0e53c80eb243f9221e9563f120e1e1",
+    "createdAt": "2026-10-03T21:28:19.429Z"
+  },
+  "artifacts": [
+    {
+      "kind": "blob",
+      "path": "discover",
+      "sha": "53e4dc804b36bff35ead1b7bcc85e45db73ac6f4e1816725e5a9058a7096d070"
+    },
+    {
+      "kind": "blob",
+      "path": "intake",
+      "sha": "a87442128858adff6fd5c11690f8ebed32742b75819c365b592b818fe8ccb6b6"
+    },
+    {
+      "kind": "blob",
+      "path": "ground",
+      "sha": "c03b16e882d9d96911b4e2e6a05a857ecbe4d012c1107fa8fd6fff53048155ef"
+    },
+    {
+      "kind": "blob",
+      "path": "clarify",
+      "sha": "af6597efca5d9c87007b3f087523f3b91f2819821fb30af244b49b3b3605810c"
+    },
+    {
+      "kind": "blob",
+      "path": "clarify-2",
+      "sha": "1c6a26557bb83f4332be57b972ae9ff4068ba026f8d7ee2445d944c01061e373"
+    },
+    {
+      "kind": "blob",
+      "path": "drafts",
+      "sha": "08856f38bced629e463944c648bac479eb4fa03bc58f53e97900bed054d23015"
+    },
+    {
+      "kind": "blob",
+      "path": "merge",
+      "sha": "beecefb2f467acf663ad1cbbf34d919d70e1935103e80041aa0546fcb54049a4"
+    },
+    {
+      "kind": "blob",
+      "path": "specify",
+      "sha": "c6c3a3a0539d388be4c6d671397a734804e5377fc36095968ff03d89391a48f3"
+    },
+    {
+      "kind": "blob",
+      "path": "specify",
+      "sha": "f5dd0519f26b2fb857506863e65b5ea1824aca46fb7381ff810971fd88b80a5e"
+    },
+    {
+      "kind": "blob",
+      "path": "plan",
+      "sha": "dfe048cad129b2cab3b39f13554c61794a427f28d25b121832b00ff7838618a0"
+    },
+    {
+      "kind": "blob",
+      "path": "approve",
+      "sha": "59623ab758d13c96a3c87e84734af45f50ad3d4718f0d0efcc467b7db1ec8960"
+    },
+    {
+      "kind": "blob",
+      "path": "stub-commit",
+      "sha": "32d59bf58d20804eae8b5ea78ef6cc08f3d798ee5f90107b152665d82f846603"
+    },
+    {
+      "kind": "blob",
+      "path": "author-tests",
+      "sha": "445afd581faa9eefa6a1397e88408ba7be583d6fb4f093138e00f1bb82ddc41b"
+    },
+    {
+      "kind": "blob",
+      "path": "author-tests",
+      "sha": "081816943365724ab0067af6c30ccb7e0e5af6daf7d97b1bd0c0f1a9c2134232"
+    },
+    {
+      "kind": "blob",
+      "path": "author-tests",
+      "sha": "6a2314d076326508a4307c5d9e8d446e99856de72d45a4aa232bd515e7bd4c55"
+    },
+    {
+      "kind": "blob",
+      "path": "implement/TASK-1",
+      "sha": "cf0ae3738636873606d1bc992dec151390a9ceffe79fc96914d162ad18d18499"
+    },
+    {
+      "kind": "blob",
+      "path": "implement/TASK-1",
+      "sha": "327352d3aa94c635490b55ba77e84ab212beadbd479c6b0d61fa0edab96c234e"
+    },
+    {
+      "kind": "blob",
+      "path": "implement/TASK-2",
+      "sha": "2acb7ab6cb491d45ac63d2068c2d650a28bf32719c675bd259622857199fdbf8"
+    },
+    {
+      "kind": "blob",
+      "path": "implement/TASK-2",
+      "sha": "d1cb4b7f4e65dad52e79effd1b92e38577147a804ad0578a564f9a994f9272c1"
+    },
+    {
+      "kind": "blob",
+      "path": "implement/TASK-3",
+      "sha": "10637f163b5916cb892e938a84c633030efe147c73125fab3126144ebcac5dc0"
+    },
+    {
+      "kind": "blob",
+      "path": "implement/TASK-3",
+      "sha": "66a8d59fd20607c35ffad3e136c776ae21808aa559e968ac0627432e8d50d37d"
+    },
+    {
+      "kind": "blob",
+      "path": "integrate",
+      "sha": "66a8d59fd20607c35ffad3e136c776ae21808aa559e968ac0627432e8d50d37d"
+    },
+    {
+      "kind": "blob",
+      "path": "integrate",
+      "sha": "13d16b5fc4d2999142a56155ae26388503529e3b14cf9582f49e9bec26c57497"
+    },
+    {
+      "kind": "blob",
+      "path": "accept",
+      "sha": "b33ae2faa9d262cd7f7655acb1c5f375049bd7520e89e742426473400aa7e149"
+    },
+    {
+      "kind": "blob",
+      "path": "accept",
+      "sha": "1ec9312658fca6ee03ae0fc33820ba265b232ce8d5d68305402fcd06cfb2dd43"
+    },
+    {
+      "kind": "blob",
+      "path": "design-check",
+      "sha": "6891815fb71b3fb6806ba65242effc73a4c1accb36995f9ad28e80ced91c369d"
+    },
+    {
+      "kind": "blob",
+      "path": "review",
+      "sha": "80907ce46f03dc4fd0ab7adac3660d0f7ac512fb48aeb34b09ba531241dfe06a"
+    }
+  ],
+  "locks": [
+    {
+      "file": "tests/Application.IntegrationTests/AppointmentStatusTransitionApiTests.cs",
+      "sha": "f504418e473cf1903e110af8222b5fa81068be4b8ac040c97426113b40fa13b6"
+    },
+    {
+      "file": "tests/Application.UnitTests/Scheduling/CancelAppointmentHandlerTests.cs",
+      "sha": "14c40c9f7e0877e5ec98ac5d47673da783798319694d832c92cf8aa3a84c6e2d"
+    },
+    {
+      "file": "tests/Application.UnitTests/Scheduling/CancelAppointmentValidatorTests.cs",
+      "sha": "587d6ea738847dc0b90be3502d8fb704a588a526f6521c960623e64b7312efd1"
+    },
+    {
+      "file": "tests/Application.UnitTests/Scheduling/CompleteAppointmentHandlerTests.cs",
+      "sha": "233cd5ac4521f199d32b5b8f0aef180dc161e14fb6e8f6dd5dd4e9760187aa0d"
+    },
+    {
+      "file": "tests/Application.UnitTests/Scheduling/CompleteAppointmentValidatorTests.cs",
+      "sha": "552babe74e9a09ba594ae888f7d686ac62e18cf3354e23f0bde761f91f007888"
+    }
+  ],
+  "approvals": [
+    {
+      "gate": "approval-4d54b248",
+      "artifactSha": "4d54b248d614ac30317f2435918da01eecca10baca60ead6298284d65124fb50",
+      "osUser": "ahsanraza",
+      "gitIdentity": "ahsanraza",
+      "riskNote": "",
+      "at": "2026-10-03T21:28:19.429Z"
+    }
+  ],
+  "gatedTreeSha": "7929ea037f706d0a42f80c356f53b196b4f2ae85",
+  "waivers": [],
+  "unlocks": [],
+  "configFingerprint": "d26425e8941f5363e52fd4a6d80ebd174dd8af0398c73472515c263055883cba",
+  "versions": {
+    "factory": "0.1.0",
+    "node": "v22.23.3",
+    "mode:brownfield": "1",
+    "mode:estimate": "1",
+    "@anthropic-ai/claude-agent-sdk": "0.3.283",
+    "@anthropic-ai/sdk": "0.128.0",
+    "openai": "7.23.0",
+    "zod": "4.6.5"
+  }
+}

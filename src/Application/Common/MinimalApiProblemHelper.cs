@@ -44,7 +44,7 @@ public class MinimalApiProblemHelper
             _ => StatusCodes.Status500InternalServerError,
         };
 
-        return CreateProblemResult(statusCode, error.Description);
+        return CreateProblemResult(statusCode, error.Description, error.Description);
     }
 
     private static ValidationProblem CreateValidationProblem(List<Error> errors)
@@ -79,12 +79,13 @@ public class MinimalApiProblemHelper
             type: problemDetails.Type);
     }
 
-    private static ProblemHttpResult CreateProblemResult(int statusCode, string title)
+    private static ProblemHttpResult CreateProblemResult(int statusCode, string title, string? detail = null)
     {
         var problemDetails = new ProblemDetails
         {
             Status = statusCode,
             Title = title,
+            Detail = detail,
             Type = GetProblemType(statusCode),
         };
 

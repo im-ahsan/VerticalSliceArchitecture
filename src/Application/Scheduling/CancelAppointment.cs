@@ -86,14 +86,14 @@ public static class CancelAppointment
                     $"Appointment with ID {request.AppointmentId} not found");
             }
 
-            // Let domain method handle business rule validation
+            // Let domain method handle business rule validation: state conflicts map to 409, argument errors to 400
             try
             {
                 appointment.Cancel(request.Reason);
             }
             catch (InvalidOperationException ex)
             {
-                return Error.Validation("Appointment.CannotCancel", ex.Message);
+                return Error.Conflict("Appointment.CannotCancel", ex.Message);
             }
             catch (ArgumentException ex)
             {

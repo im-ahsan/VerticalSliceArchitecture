@@ -31,6 +31,7 @@ public static class SchedulingEndpoints
             .Produces<CompleteAppointment.Result>(StatusCodes.Status200OK)
             .ProducesValidationProblem()
             .ProducesProblem(StatusCodes.Status404NotFound)
+            .ProducesProblem(StatusCodes.Status409Conflict)
             .AddEndpointFilter<ValidationFilter<CompleteAppointment.Command>>();
 
         group.MapPost("/{appointmentId}/cancel", CancelAppointment.Endpoint.Handle)
@@ -38,6 +39,7 @@ public static class SchedulingEndpoints
             .Produces<CancelAppointment.Result>(StatusCodes.Status200OK)
             .ProducesValidationProblem()
             .ProducesProblem(StatusCodes.Status404NotFound)
+            .ProducesProblem(StatusCodes.Status409Conflict)
             .AddEndpointFilter<ValidationFilter<CancelAppointment.Command>>();
 
         group.MapGet("/", GetAppointments.Endpoint.Handle)
