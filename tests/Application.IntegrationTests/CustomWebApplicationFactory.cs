@@ -11,6 +11,10 @@ namespace VerticalSliceArchitecture.Application.IntegrationTests;
 
 public class CustomWebApplicationFactory : WebApplicationFactory<Program>
 {
+    // One database per factory: test classes run in parallel, and two factories seeding one shared
+    // in-memory database collide ("An item with the same key has already been added").
+    private readonly string _databaseName = $"TestDb-{Guid.NewGuid():N}";
+
     protected override void ConfigureWebHost(IWebHostBuilder builder)
     {
         builder.UseEnvironment("Development");
@@ -42,7 +46,7 @@ public class CustomWebApplicationFactory : WebApplicationFactory<Program>
 
             services.AddDbContext<ApplicationDbContext>(options =>
             {
-                options.UseInMemoryDatabase("TestDb");
+                options.UseInMemoryDatabase(_databaseName);
             });
         });
     }
